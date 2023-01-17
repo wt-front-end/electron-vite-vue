@@ -1,11 +1,12 @@
 {
-  "name": "electron-vite-template",
-  "version": "1.0.0",
-  "main": "./dist/electron/main/main.js",
-  "author": "sky <https://github.com/umbrella22>",
-  "description": "electron-vite-template project",
+  "name": "<%= name %>",
+  "version": "<%= version %>",
+  "author": "<%= author %>",
+  "description": "<%= description %>",
+  "email": "<%= email %>",
   "license": "MIT",
   "encryptionLevel": 1,
+  "main": "./dist/electron/main/main.js",
   "scripts": {
     "dev": "esno .electron-vite/dev-runner.ts",
     "build": "cross-env BUILD_TARGET=clean esno .electron-vite/build.ts  && electron-builder -c build.json",
